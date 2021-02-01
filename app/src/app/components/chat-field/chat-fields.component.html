@@ -1,0 +1,16 @@
+<div class="chat-container">
+  <div class="element" *ngFor="let message of messages">
+
+    <span class="time">
+      ({{ message.time | date:'shortTime' }})
+    </span>
+
+    <span class="name">
+      {{ message.name }}:
+    </span>
+
+    <span class="message">
+      {{ message.message }}
+    </span>
+  </div>
+</div>

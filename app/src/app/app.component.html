@@ -1,0 +1,24 @@
+<mat-toolbar color="'primary'">
+  <span>Chat</span>
+</mat-toolbar>
+
+<mat-drawer-container>
+  <mat-drawer [position]="'end'" mode="side" opened>
+    <div class="side-nav-content">
+      <app-list [elements]="users" (selectUser)="onSelectUserName($event)"></app-list>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="content-container">
+      <div class="messages-container">
+        <app-chat-fields [messages]="messages"></app-chat-fields>
+      </div>
+
+      <app-message-input [selectedUserName]="selectedUserName" (messageApply)="sendMessage($event)"></app-message-input>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+

@@ -1,0 +1,46 @@
+@import '~@angular/material/theming';
+
+mat-toolbar {
+  background: $black-87-opacity;
+  color: #616161;
+}
+
+mat-drawer-container {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  mat-drawer {
+    width: 20%;
+    max-width: 20%;
+    min-width: 300px;
+
+    background: $black-87-opacity;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.side-nav-content {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding: 15px 15px 90px 15px;
+}
+
+.messages-container {
+  position: relative;
+  height: 100%;
+  border: 1px solid #cfd8dc;
+}
+

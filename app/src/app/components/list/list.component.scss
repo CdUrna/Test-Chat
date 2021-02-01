@@ -1,0 +1,31 @@
+.list-container {
+  max-width: 100%;
+  width: 100%;
+  min-width: 250px;
+
+  .list-element {
+    max-width: 100%;
+    background-color: #fafafa;
+    padding: 15px;
+    text-align: left;
+
+    cursor: pointer;
+
+    &.single {
+      border-radius: 6px !important;
+    }
+
+    &:first-child {
+      border-radius: 6px 6px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 6px 6px;
+    }
+
+    &.active {
+      background-color: #0277bd;
+      color: #fafafa;
+    }
+  }
+}

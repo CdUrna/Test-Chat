@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Hi</h1>
+
+<div mat-dialog-content>
+  <p>Enter your nickname</p>
+  <mat-form-field>
+    <mat-label>nickname</mat-label>
+    <input matInput [formControl]="nickNameControl" [(ngModel)]="nickname">
+    <mat-error *ngIf="nickNameControl.invalid">{{ nickNameControl.errors.name }}</mat-error>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button [disabled]="!nickname && nickNameControl.invalid" [mat-dialog-close]="nickname" cdkFocusInitial>Ok</button>
+</div>

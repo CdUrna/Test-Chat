@@ -1,0 +1,7 @@
+<div class="message-container">
+  <mat-form-field appearance="outline" class="message-input">
+    <mat-label>Message</mat-label>
+    <input matInput placeholder="message" (keyup.enter)="onSend()" [(ngModel)]="message">
+  </mat-form-field>
+  <button mat-flat-button class="send-button" (click)="onSend()">Send</button>
+</div>

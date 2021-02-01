@@ -1,0 +1,21 @@
+.message-container {
+  max-width: 100%;
+  display: flex;
+
+  .message-input {
+    width: 100%;
+    flex-grow: 1;
+
+    ::ng-deep .mat-form-field-wrapper {
+      padding-bottom: 0;
+    }
+  }
+
+  .send-button {
+    background-color: #64dd17;
+    color: #fafafa;
+
+    height: 63px;
+    margin-top: 3px;
+  }
+}

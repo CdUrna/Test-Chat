@@ -1,0 +1,8 @@
+<div class="list-container">
+  <div class="list-element"
+       [ngClass]="{'active': element.active, 'single': elements.length === 1 }"
+       (dblclick)="!element.active && selectUser.emit(element.name)"
+       *ngFor="let element of elements">
+    {{ element.name }}
+  </div>
+</div>
